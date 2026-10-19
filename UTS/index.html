@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Toko Buah Dayat menyediakan buah segar pilihan. Pesan online, bayar mudah, nota belanja otomatis.">
+    <title>Toko Buah Dayat | Buah Segar Setiap Hari</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ================= ANNOUNCEMENT BAR ================= -->
+    <div class="topbar">
+        <div class="container topbar-inner">
+            <span>🚚 Gratis ongkir untuk belanja di atas <strong id="freeShipText">Rp100.000</strong></span>
+            <span class="topbar-right">☎ WhatsApp: 083193337488</span>
+        </div>
+    </div>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar-wrapper">
+        <div class="container navbar-content">
+            <a href="#home" class="logo" aria-label="Toko Buah Dayat">
+                <span class="logo-icon">🍊</span>
+                <span class="logo-text">Toko Buah <strong>Dayat</strong></span>
+            </a>
+
+            <nav class="nav-menu" id="navMenu" aria-label="Navigasi utama">
+                <a href="#home" class="active">Beranda</a>
+                <a href="#products">Produk</a>
+                <a href="#how">Cara Pesan</a>
+                <a href="#about">Tentang</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact">Kontak</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="icon-btn" id="themeButton" type="button" aria-label="Ganti tema">🌙</button>
+                <button class="icon-btn cart-btn" id="openCart" type="button" aria-label="Buka keranjang">
+                    🛒<span class="cart-badge" id="cartBadge">0</span>
+                </button>
+                <button class="icon-btn mobile-menu" id="mobileMenu" type="button" aria-label="Buka menu">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ================= HERO ================= -->
+        <section class="hero" id="home">
+            <div class="container hero-content">
+                <div class="hero-text reveal">
+                    <p class="eyebrow">SEGAR • SEHAT • BERKUALITAS</p>
+                    <h1>Buah Segar untuk <span>Hari Lebih Ceria</span></h1>
+                    <p class="hero-description">
+                        Belanja buah favorit keluarga langsung dari Toko Buah Dayat. Pilih, masukkan ke keranjang,
+                        lalu dapatkan nota belanja otomatis dan kirim pesanan lewat WhatsApp.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#products" class="btn btn-primary btn-lg">Belanja Sekarang →</a>
+                        <a href="#how" class="btn btn-ghost btn-lg">Cara Memesan</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div><strong>6+</strong><span>Pilihan buah</span></div>
+                        <div><strong>100%</strong><span>Dipilih teliti</span></div>
+                        <div><strong>Mudah</strong><span>Pesan via WhatsApp</span></div>
+                    </div>
+                </div>
+                <div class="hero-image reveal">
+                    <div class="hero-blob"></div>
+                    <img src="images/keranjang-buah.png" alt="Keranjang berisi buah segar">
+                    <div class="fresh-badge"><span>🍃</span><div><strong>Selalu Segar</strong><small>Dipilih dengan teliti</small></div></div>
+                    <div class="fresh-badge badge-2"><span>⭐</span><div><strong>Pelayanan Ramah</strong><small>Langsung dari pemilik</small></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= KEUNGGULAN ================= -->
+        <section class="features">
+            <div class="container features-grid">
+                <div class="feature"><span>🥭</span><div><strong>Buah Pilihan</strong><small>Diseleksi setiap hari</small></div></div>
+                <div class="feature"><span>🛵</span><div><strong>Antar atau Ambil</strong><small>Pilih sesuai kebutuhan</small></div></div>
+                <div class="feature"><span>🧾</span><div><strong>Nota Otomatis</strong><small>Rincian belanja jelas</small></div></div>
+                <div class="feature"><span>💬</span><div><strong>Respon Cepat</strong><small>Konfirmasi via WhatsApp</small></div></div>
+            </div>
+        </section>
+
+        <!-- ================= KATEGORI ================= -->
+        <section class="section categories" id="categories">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">KATEGORI</p>
+                    <h2>Belanja Sesuai Selera</h2>
+                </div>
+                <div class="category-grid">
+                    <button class="category-card reveal" data-go="semua" type="button"><span>🧺</span><strong>Semua Buah</strong><small>Lihat seluruh katalog</small></button>
+                    <button class="category-card reveal" data-go="lokal" type="button"><span>🍌</span><strong>Buah Lokal</strong><small>Segar dari petani sekitar</small></button>
+                    <button class="category-card reveal" data-go="impor" type="button"><span>🍎</span><strong>Buah Impor</strong><small>Pilihan premium</small></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PRODUK ================= -->
+        <section class="section products" id="products">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">KATALOG</p>
+                    <h2>Buah Favorit Pelanggan</h2>
+                    <p>Pilih buah yang kamu inginkan, atur jumlahnya di keranjang, lalu checkout.</p>
+                </div>
+
+                <div class="product-tools">
+                    <div class="search-box">
+                        <span aria-hidden="true">🔍</span>
+                        <input type="search" id="searchInput" placeholder="Cari nama buah..." aria-label="Cari nama buah">
+                    </div>
+                    <div class="filter-buttons" id="filterButtons">
+                        <button class="filter-btn active" data-category="semua" type="button">Semua</button>
+                        <button class="filter-btn" data-category="lokal" type="button">Buah Lokal</button>
+                        <button class="filter-btn" data-category="impor" type="button">Buah Impor</button>
+                    </div>
+                    <select id="sortSelect" aria-label="Urutkan produk">
+                        <option value="default">Urutkan: Rekomendasi</option>
+                        <option value="termurah">Harga terendah</option>
+                        <option value="termahal">Harga tertinggi</option>
+                        <option value="nama">Nama A–Z</option>
+                    </select>
+                </div>
+
+                <div class="product-grid" id="productGrid"></div>
+                <p class="empty-message" id="emptyMessage" hidden>Buah tidak ditemukan. Coba kata kunci lain.</p>
+                <p class="price-note">* Harga adalah harga contoh dan dapat dikonfirmasi kembali kepada pemilik toko.</p>
+            </div>
+        </section>
+
+        <!-- ================= PROMO ================= -->
+        <section class="promo">
+            <div class="container promo-inner reveal">
+                <div>
+                    <p class="eyebrow light">PENAWARAN</p>
+                    <h2>Belanja lebih dari <span id="promoFree">Rp100.000</span>, ongkir gratis!</h2>
+                    <p>Cocok untuk stok buah mingguan keluarga, acara arisan, atau parsel sehat.</p>
+                </div>
+                <a href="#products" class="btn btn-light btn-lg">Mulai Belanja</a>
+            </div>
+        </section>
+
+        <!-- ================= CARA PESAN ================= -->
+        <section class="section how" id="how">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">CARA PEMESANAN</p>
+                    <h2>Belanja dalam 4 Langkah</h2>
+                </div>
+                <div class="steps">
+                    <div class="step reveal"><span class="step-no">1</span><h3>Pilih Buah</h3><p>Telusuri katalog dan tekan tombol tambah pada buah favoritmu.</p></div>
+                    <div class="step reveal"><span class="step-no">2</span><h3>Cek Keranjang</h3><p>Atur jumlah, hapus item, dan lihat total belanja secara langsung.</p></div>
+                    <div class="step reveal"><span class="step-no">3</span><h3>Isi Data & Checkout</h3><p>Isi nama, alamat atau pilih ambil di toko, lalu pilih metode bayar.</p></div>
+                    <div class="step reveal"><span class="step-no">4</span><h3>Terima Nota</h3><p>Nota belanja dibuat otomatis. Cetak atau kirim ke WhatsApp pemilik.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= TENTANG ================= -->
+        <section class="section about" id="about">
+            <div class="container about-wrapper">
+                <div class="about-image reveal">
+                    <img src="images/buah segar.png" alt="Berbagai buah segar">
+                </div>
+                <div class="about-content reveal">
+                    <p class="eyebrow">TENTANG TOKO KAMI</p>
+                    <h2>Kesegaran yang Bisa Kamu Pilih Sendiri</h2>
+                    <p>
+                        Toko Buah Dayat hadir untuk membantu keluarga mendapatkan buah sehari-hari dengan
+                        pilihan yang beragam. Kami percaya kebiasaan sehat bisa dimulai dari hal sederhana,
+                        seperti menikmati buah segar setiap hari.
+                    </p>
+                    <ul class="about-points">
+                        <li><span class="point-icon">🍎</span><span><strong>Buah beragam</strong><small>Banyak pilihan lokal dan impor untuk kebutuhan harian.</small></span></li>
+                        <li><span class="point-icon">🤝</span><span><strong>Pelayanan ramah</strong><small>Pesanan dapat ditanyakan langsung kepada pemilik toko.</small></span></li>
+                        <li><span class="point-icon">🧾</span><span><strong>Transaksi transparan</strong><small>Setiap pesanan dilengkapi nota dengan rincian harga.</small></span></li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Hubungi Pemilik Toko</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= FAQ ================= -->
+        <section class="section faq" id="faq">
+            <div class="container faq-wrapper">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">FAQ</p>
+                    <h2>Pertanyaan yang Sering Diajukan</h2>
+                </div>
+                <details class="reveal" open><summary>Bagaimana cara memesan?</summary><p>Tambahkan buah ke keranjang, tekan Checkout, isi data pemesan, lalu buat nota. Pesanan dikirim ke WhatsApp pemilik untuk dikonfirmasi.</p></details>
+                <details class="reveal"><summary>Apakah harga di website pasti?</summary><p>Harga di website adalah harga contoh. Pemilik toko akan mengonfirmasi ketersediaan dan harga terbaru melalui WhatsApp.</p></details>
+                <details class="reveal"><summary>Metode pembayaran apa yang tersedia?</summary><p>Tunai (bayar saat terima/ambil), transfer bank, dan QRIS. Detail pembayaran akan diberikan pemilik saat konfirmasi.</p></details>
+                <details class="reveal"><summary>Apakah bisa diantar?</summary><p>Bisa. Pilih opsi “Antar ke alamat” saat checkout. Area dan ongkos kirim final dikonfirmasi oleh pemilik toko.</p></details>
+                <details class="reveal"><summary>Bagaimana jika buah yang dipesan habis?</summary><p>Pemilik akan menghubungi kamu lewat WhatsApp untuk menawarkan pengganti atau menyesuaikan pesanan.</p></details>
+            </div>
+        </section>
+
+        <!-- ================= KONTAK ================= -->
+        <section class="section contact" id="contact">
+            <div class="container contact-wrapper">
+                <div class="contact-info reveal">
+                    <p class="eyebrow">HUBUNGI KAMI</p>
+                    <h2>Ada yang ingin ditanyakan?</h2>
+                    <p class="contact-description">Hubungi pemilik Toko Buah Dayat untuk menanyakan ketersediaan buah, pesanan dalam jumlah besar, dan konfirmasi harga.</p>
+                    <div class="contact-list">
+                        <div class="contact-item"><span class="contact-icon">👤</span><span><small>Pemilik Toko</small><strong>Resti Firmaneli</strong></span></div>
+                        <div class="contact-item"><span class="contact-icon">☎</span><span><small>WhatsApp</small><strong>083193337488</strong></span></div>
+                        <div class="contact-item"><span class="contact-icon">🕒</span><span><small>Jam Layanan</small><strong>Hubungi untuk informasi jam buka</strong></span></div>
+                    </div>
+                    <a class="btn btn-whatsapp" href="https://wa.me/6283193337488" target="_blank" rel="noopener">Chat WhatsApp Pemilik ↗</a>
+                </div>
+
+                <div class="contact-form reveal">
+                    <h3>Kirim Pertanyaan</h3>
+                    <p>Pesan akan disiapkan dan dikirim melalui WhatsApp.</p>
+                    <form id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label for="nama">Nama Lengkap</label>
+                            <input type="text" id="nama" placeholder="Nama kamu" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="telepon">Nomor HP</label>
+                                <input type="tel" id="telepon" placeholder="08xxxxxxxxxx" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="buahPilihan">Buah yang diminati</label>
+                                <select id="buahPilihan" required></select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="pesan">Pesan / Jumlah</label>
+                            <textarea id="pesan" rows="4" placeholder="Contoh: 2 kg, apakah masih tersedia?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Kirim ke WhatsApp →</button>
+                        <p class="form-note" id="formNote" role="status"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="container footer-top">
+            <div class="footer-brand">
+                <a href="#home" class="footer-logo"><span>🍊</span><strong>Toko Buah Dayat</strong></a>
+                <p>Buah segar untuk keluarga. Terima kasih sudah mendukung usaha lokal kami.</p>
+                <p class="owner-line">Pemilik: <strong>Resti Firmaneli</strong></p>
+            </div>
+            <div class="footer-column">
+                <h4>Navigasi</h4>
+                <a href="#home">Beranda</a><a href="#products">Produk Buah</a><a href="#how">Cara Pesan</a><a href="#about">Tentang Kami</a><a href="#faq">FAQ</a>
+            </div>
+            <div class="footer-column">
+                <h4>Kategori</h4>
+                <a href="#products" data-footer-filter="lokal">Buah Lokal</a>
+                <a href="#products" data-footer-filter="impor">Buah Impor</a>
+                <a href="#products" data-footer-filter="semua">Semua Produk</a>
+            </div>
+            <div class="footer-column">
+                <h4>Hubungi Kami</h4>
+                <p>WhatsApp: 083193337488</p>
+                <a href="https://wa.me/6283193337488" target="_blank" rel="noopener">Chat pemilik ↗</a>
+                <p class="pay-note">Pembayaran: Tunai • Transfer • QRIS</p>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>© 2026 Toko Buah Dayat. Seluruh hak cipta dilindungi.</p>
+            <a href="#home">Kembali ke atas ↑</a>
+        </div>
+    </footer>
+
+    <!-- ================= FLOATING ================= -->
+    <a class="wa-float" href="https://wa.me/6283193337488" target="_blank" rel="noopener" aria-label="Chat WhatsApp">💬</a>
+    <button class="to-top" id="toTop" type="button" aria-label="Kembali ke atas">↑</button>
+
+    <!-- ================= CART DRAWER ================= -->
+    <div class="overlay" id="overlay"></div>
+    <aside class="drawer" id="cartDrawer" aria-label="Keranjang belanja" aria-hidden="true">
+        <div class="drawer-head">
+            <h3>🛒 Keranjang Belanja</h3>
+            <button class="icon-btn" id="closeCart" type="button" aria-label="Tutup keranjang">✕</button>
+        </div>
+        <div class="drawer-body" id="cartItems"></div>
+        <div class="drawer-foot" id="cartFoot">
+            <div class="sum-row"><span>Subtotal</span><strong id="cartSubtotal">Rp0</strong></div>
+            <p class="sum-hint" id="shipHint"></p>
+            <button class="btn btn-primary btn-block" id="checkoutButton" type="button">Lanjut ke Checkout →</button>
+            <button class="btn btn-link" id="clearCart" type="button">Kosongkan keranjang</button>
+        </div>
+    </aside>
+
+    <!-- ================= CHECKOUT MODAL ================= -->
+    <div class="modal" id="checkoutModal" aria-hidden="true">
+        <div class="modal-dialog" role="dialog" aria-labelledby="checkoutTitle">
+            <div class="modal-head">
+                <h3 id="checkoutTitle">Checkout Pesanan</h3>
+                <button class="icon-btn" data-close="checkoutModal" type="button" aria-label="Tutup">✕</button>
+            </div>
+            <form id="checkoutForm" class="checkout-grid" novalidate>
+                <div class="checkout-fields">
+                    <div class="form-group">
+                        <label for="coNama">Nama Lengkap</label>
+                        <input type="text" id="coNama" placeholder="Nama pemesan" autocomplete="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="coHp">Nomor HP / WhatsApp</label>
+                        <input type="tel" id="coHp" placeholder="08xxxxxxxxxx" autocomplete="tel">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Pengambilan</label>
+                        <div class="choice-row">
+                            <label class="choice"><input type="radio" name="delivery" value="antar" checked><span>🛵 Antar ke alamat</span></label>
+                            <label class="choice"><input type="radio" name="delivery" value="ambil"><span>🏪 Ambil di toko</span></label>
+                        </div>
+                    </div>
+                    <div class="form-group" id="addressGroup">
+                        <label for="coAlamat">Alamat Pengantaran</label>
+                        <textarea id="coAlamat" rows="3" placeholder="Nama jalan, nomor rumah, patokan"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Metode Pembayaran</label>
+                        <div class="choice-row">
+                            <label class="choice"><input type="radio" name="payment" value="Tunai" checked><span>💵 Tunai</span></label>
+                            <label class="choice"><input type="radio" name="payment" value="Transfer Bank"><span>🏦 Transfer</span></label>
+                            <label class="choice"><input type="radio" name="payment" value="QRIS"><span>📱 QRIS</span></label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="coCatatan">Catatan (opsional)</label>
+                        <textarea id="coCatatan" rows="2" placeholder="Contoh: pilih yang agak matang"></textarea>
+                    </div>
+                    <p class="form-note error" id="checkoutNote" role="alert"></p>
+                </div>
+
+                <div class="checkout-summary">
+                    <h4>Ringkasan</h4>
+                    <div id="summaryItems"></div>
+                    <div class="sum-row"><span>Subtotal</span><span id="sumSubtotal">Rp0</span></div>
+                    <div class="sum-row"><span>Ongkos kirim</span><span id="sumShipping">Rp0</span></div>
+                    <div class="sum-row total"><span>Total</span><strong id="sumTotal">Rp0</strong></div>
+                    <button class="btn btn-primary btn-block" type="submit">Buat Nota Belanja 🧾</button>
+                    <small class="muted">Pesanan belum dikirim sampai kamu menekan tombol WhatsApp di nota.</small>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- ================= NOTA MODAL ================= -->
+    <div class="modal modal-receipt" id="receiptModal" aria-hidden="true">
+        <div class="modal-dialog receipt-dialog" role="dialog" aria-labelledby="receiptTitle">
+            <div class="receipt-actions no-print">
+                <button class="btn btn-primary" id="sendWa" type="button">Kirim ke WhatsApp</button>
+                <button class="btn btn-ghost" id="printReceipt" type="button">🖨 Cetak / Simpan PDF</button>
+                <button class="btn btn-link" id="newOrder" type="button">Pesanan Baru</button>
+                <button class="icon-btn" data-close="receiptModal" type="button" aria-label="Tutup">✕</button>
+            </div>
+            <div class="receipt" id="receiptPaper">
+                <div class="receipt-head">
+                    <div class="receipt-logo">🍊</div>
+                    <h2 id="receiptTitle">Toko Buah Dayat</h2>
+                    <p>Pemilik: Resti Firmaneli • WhatsApp 083193337488</p>
+                    <p class="receipt-badge">NOTA BELANJA</p>
+                </div>
+                <div class="receipt-meta" id="receiptMeta"></div>
+                <table class="receipt-table">
+                    <thead><tr><th>Item</th><th class="num">Harga</th><th class="num">Qty</th><th class="num">Jumlah</th></tr></thead>
+                    <tbody id="receiptRows"></tbody>
+                </table>
+                <div class="receipt-total" id="receiptTotals"></div>
+                <p class="receipt-foot">Terima kasih sudah berbelanja! Harga dan ketersediaan dikonfirmasi oleh pemilik toko.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="toast-message" id="toastMessage" role="status" aria-live="polite"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
